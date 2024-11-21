@@ -1,0 +1,73 @@
+@import 'custom';
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+footer.footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    margin-bottom: 250px;
+}
+
+p {
+    font-family: $font-family-serif;
+    font-size: 18px;
+}
+
+.titre {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../image/Savane/elephants-947592_1280.jpg);
+        background-size: cover;
+        filter: brightness(0.6);
+    }
+
+    * {
+        //positionner les éléments devant le before
+        position: relative;
+    }
+}
+
+.titre-content {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-contaner {
+    position: relative;
+
+    .btn {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.avis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+    color: $primary;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css" />
+    <title>Arcadia</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">ARCADIA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/habitats">Habitats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                        <li class="nav-item" data-show="disconnected">
+                            <a class="nav-link" href="/signin">Connexion</a>
+                        </li>
+                        <li class="nav-item" data-show="connected">
+                            <button class="nav-link" id="signout-btn">Déconnexion</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-page">
+
+    </main>
+    <footer class="bg-primary text-white text-center footer">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <h3>Nos horaires</h3>
+                <p>Du lundi au dimanche 9h-18h sans interruption</p>
+            </div>
+            <div class="col-6 col-lg-4">
+                <p>Arcadia<br />
+                    293 route de la foret<br />
+                    35380 Paimpont</p>
+            </div>
+            <div class="col-6 col-lg-4">
+                02 02 02 02 02<br />
+                Contact@arcadia.fr
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script type="module" src="Router/router.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
